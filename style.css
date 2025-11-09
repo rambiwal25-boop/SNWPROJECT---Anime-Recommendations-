@@ -1,1 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #16476A;
+}
 
+header {
+    background:#132440 ;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.title {
+    text-align: center;
+    margin: 0;
+    color:#BF0A2F;
+}
+
+nav {
+    text-align: center;
+    margin-top: 8px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 16px;
+    padding: 120px;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.dropbtn {
+    background: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 120px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+}
+
+.dropdown-content a:hover {
+    background: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.hero {
+    background: url("/animebackground.jpg");
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 30px;
+}
+
+.card {
+    position: relative;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index:-1;
+}
+
+.card img {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: auto;
+}
+
+.story {
+    display: none;
+    background: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card:hover .story {
+    display: block;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
