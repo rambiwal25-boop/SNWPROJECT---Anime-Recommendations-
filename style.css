@@ -8,7 +8,7 @@ header {
     background:#132440 ;
     color: white;
     padding: 10px;
-    position: sticky;
+    position: relative;
     top: 0;
 }
 
@@ -96,7 +96,7 @@ nav a {
     background: white;
     border-radius: 8px;
     overflow: hidden;
-    z-index:-1;
+    /* z-index:-1; */
 }
 
 .card img {
